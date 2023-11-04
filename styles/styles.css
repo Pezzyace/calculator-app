@@ -1,0 +1,45 @@
+/*************THEME ONE***************/
+/*************THEME TWO***************/
+/*************THEME THREE***************/
+/*************THEME ONE***************/
+/*************THEME TWO***************/
+/*************THEME THREE***************/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.container .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container .head .logo {
+  color: hsl(0, 0%, 100%);
+  font-size: 17px;
+  text-transform: lowercase;
+}
+.container .head .slider-container {
+  display: flex;
+  gap: 15px;
+}
+.container .head .slider-container .slider {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}/*# sourceMappingURL=styles.css.map */

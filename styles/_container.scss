@@ -1,0 +1,28 @@
+@import 'colors';
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  .head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .logo{
+      color: $crack;
+      font-size: 17px;
+      text-transform: lowercase;
+    }
+
+    .slider-container{
+      display: flex;
+      gap: 15px;
+
+      .slider{
+        display: flex;
+      }
+    }
+  }
+}
