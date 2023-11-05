@@ -85,3 +85,24 @@ function operate(a, b, op) {
       return 'Error';
   }
 }
+
+const themeStyle = document.getElementById("mode");
+const darkModeToggle = document.getElementById("one");
+const lightModeToggle = document.getElementById("two");
+const purpleModeToggle = document.getElementById("three");
+
+
+lightModeToggle.addEventListener("click", () => {
+  console.log("light");
+  themeStyle.setAttribute("href", "styles/lightmode.css");
+});
+
+darkModeToggle.addEventListener("click", () => {
+  console.log("light");
+  themeStyle.setAttribute("href", "styles/styles.css");
+});
+
+purpleModeToggle.addEventListener("click", () => {
+  console.log("light");
+  themeStyle.setAttribute("href", "styles/purplemode.css");
+});
