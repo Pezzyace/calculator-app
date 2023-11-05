@@ -7,7 +7,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
 }
 .container .head {
   display: flex;
@@ -23,8 +23,66 @@
   display: flex;
   gap: 15px;
 }
+.container .head .slider-container p {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
 .container .head .slider-container .slider {
   display: flex;
+  flex-direction: column;
+}
+.container .head .slider-container .slider p {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+.container .head .slider-container .slider .top {
+  display: flex;
+}
+.container .display {
+  border-radius: 10px;
+  height: 70px;
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  margin-bottom: 15px;
+}
+.container .buttons-container {
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  padding: 15px;
+}
+.container .buttons-container .one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.container .buttons-container .one button {
+  height: 40px;
+  font-size: 25px;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.container .buttons-container .one .delete-btn {
+  background-color: hsl(225, 21%, 49%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+}
+.container .buttons-container .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.container .buttons-container .bottom button {
+  height: 40px;
+  font-size: 25px;
+  color: hsl(221, 14%, 31%);
+  background-color: hsl(30, 25%, 89%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 * {
