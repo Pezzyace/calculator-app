@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   width: 30%;
+  margin-bottom: 30px;
 }
 .container .head {
   display: flex;
@@ -64,11 +65,12 @@
   border: none;
   border-radius: 5px;
   font-weight: 700;
+  cursor: pointer;
 }
 .container .buttons-container .one .delete-btn {
   background-color: hsl(225, 21%, 49%);
   color: hsl(0, 0%, 100%);
-  font-size: 20px;
+  font-size: 17px;
 }
 .container .buttons-container .bottom {
   display: grid;
@@ -77,12 +79,19 @@
 }
 .container .buttons-container .bottom button {
   height: 40px;
-  font-size: 25px;
-  color: hsl(221, 14%, 31%);
-  background-color: hsl(30, 25%, 89%);
+  font-size: 17px;
   border: none;
   border-radius: 5px;
   font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container .buttons-container .bottom .reset-btn {
+  background-color: hsl(225, 21%, 49%);
+}
+.container .buttons-container .bottom .solve-btn {
+  background-color: hsl(6, 63%, 50%);
 }
 
 * {

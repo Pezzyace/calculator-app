@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   width: 30%;
+  margin-bottom: 30px;
 
   .head{
     display: flex;
@@ -66,11 +67,12 @@
         border: none;
         border-radius: 5px;
         font-weight: 700;
+        cursor: pointer;
       }
       .delete-btn{
         background-color: $ddbk;
         color: $crack;
-        font-size: 20px;
+        font-size: 17px;
       }
     }
     .bottom{
@@ -80,12 +82,20 @@
 
       button{
         height: 40px;
-        font-size: 25px;
-        color: $vdgb;
-        background-color: $lgo;
+        font-size: 17px;
         border: none;
         border-radius: 5px;
         font-weight: 700;
+        color: $crack;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .reset-btn{
+        background-color: $ddbk;
+      }
+
+      .solve-btn{
+        background-color: $blood;
       }
     }
   }
