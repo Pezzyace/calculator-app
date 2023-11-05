@@ -1,0 +1,65 @@
+@import 'colors';
+
+.buttons-container{
+  background-color: $vddbs;
+  border-radius: 10px;
+  padding: 15px;
+
+  .one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    button{
+      height: 50px;
+      font-size: 25px;
+      color: $vdgb;
+      background-color: $lgo;
+      border: none;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: $crack;
+    }
+    .delete-btn{
+      background-color: $ddbk;
+      color: $crack;
+      font-size: 17px;
+    }
+    .delete-btn:hover{
+      background-color: $ddbkh;
+    }
+  }
+  .bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    button{
+      height: 50px;
+      font-size: 17px;
+      border: none;
+      border-radius: 5px;
+      font-weight: 700;
+      color: $crack;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .reset-btn{
+      background-color: $ddbk;
+    }
+    .reset-btn:hover{
+      background-color: $ddbkh;
+    }
+
+    .solve-btn{
+      background-color: $blood;
+    }
+    .solve-btn:hover{
+      background-color: $bloodh;
+    }
+  }
+}

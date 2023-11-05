@@ -14,7 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body id="body">
   <main>
     <div class="container">
       <div class="head">
@@ -28,52 +28,50 @@
               <p>3</p>
             </div>
             <div class="bottom">
-  
+                <input class="button" type="radio" name="toggle" id="one" />
+                <input class="button" type="radio" name="toggle" id="two" />
+                <input class="button" type="radio" name="toggle" id="three" />
             </div>
           </div>
         </div>
       </div>
-      <span class="display" id="display"></span>
+      <input type="text" placeholder="0" value="" max="10" readonly class="display" id="display">
       <div class="buttons-container">
         <div class="one">
           <button class="input">7</button>
           <button class="input">8</button>
           <button class="input">9</button>
-          <button class="delete-btn">DEL</button>
+          <button class="delete-btn" id="delete">DEL</button>
         </div>
         <div class="one">
           <button class="input">4</button>
           <button class="input">5</button>
           <button class="input">6</button>
-          <button class="input">+</button>
+          <button class="input" id="add">+</button>
         </div>
         <div class="one">
           <button class="input">1</button>
           <button class="input">2</button>
           <button class="input">3</button>
-          <button class="input">-</button>
+          <button class="input" id="minus">-</button>
         </div>
         <div class="one">
-          <button class="input">.</button>
+          <button class="input" class="dot">.</button>
           <button class="input">0</button>
-          <button class="input">/</button>
-          <button class="input">x</button>
+          <button class="input" id="divide">/</button>
+          <button class="input" id="multiply">x</button>
         </div>
         <div class="bottom">
-          <button class="reset-btn">Reset</button>
-          <button class="solve-btn">=</button>
+          <button class="reset-btn" id="resteBtn">Reset</button>
+          <button class="solve-btn" id="solveBtn">=</button>
         </div>
       </div>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/pezzyace">Peace Akaehomen</a>.
     </div>
   </main>
- 
-
-
-  
-  
+  <script src="script.js"></script>
 </body>
 </html>

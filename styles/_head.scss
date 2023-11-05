@@ -1,0 +1,82 @@
+@import 'colors';
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+
+  .logo{
+    color: $crack;
+    font-size: 20px;
+    text-transform: lowercase;
+  }
+
+  .slider-container{
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+
+    p{
+        color: $crack;
+        text-transform: uppercase;
+      }
+
+    .slider{
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      
+      p{
+        color: $crack;
+        text-transform: uppercase;
+      }
+
+      .top{
+        display: flex;
+        justify-content: space-around;
+
+        p{
+          font-size: 8px;
+        }
+      }
+      .bottom{
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        background-color: $vddbsb;
+        padding: 3px;
+
+        input {
+          height: 15px;
+          width: 15px;
+          appearance: none;
+          cursor: pointer;
+          border-radius: 50%;
+          opacity: 0;
+        }
+        #one {
+          opacity: 1;
+          background-color: $blood;
+        }
+        #one:hover{
+          background-color: $bloodh;
+        }
+        #two {
+          opacity: 0;
+          background-color: $blood;
+        }
+        #two:hover{
+          background-color: $bloodh;
+        }
+        #three {
+          opacity: 0;
+          background-color: $pc;
+        }
+        #three:hover{
+          background-color: $sc;
+        }
+      }
+    }
+  }
+}

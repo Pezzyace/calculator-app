@@ -1,102 +1,31 @@
 @import 'colors';
 
+
 .container{
   display: flex;
   flex-direction: column;
   width: 30%;
   margin-bottom: 30px;
 
-  .head{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-
-    .logo{
-      color: $crack;
-      font-size: 17px;
-      text-transform: lowercase;
-    }
-
-    .slider-container{
-      display: flex;
-      gap: 15px;
-
-      p{
-          color: $crack;
-          text-transform: uppercase;
-        }
-
-      .slider{
-        display: flex;
-        flex-direction: column;
-
-        p{
-          color: $crack;
-          text-transform: uppercase;
-        }
-
-        .top{
-          display: flex;
-        }
-      }
-    }
+  @include mobile{
+    width: 90%;
   }
+
+  
   .display{
     border-radius: 10px;
-    height: 70px;
+    border: none;
+    outline: none;
+    height: 80px;
     width: 100%;
     background-color: $vddbsb;
-    margin-bottom: 15px; 
-  }
-  .buttons-container{
-    background-color: $vddbs;
-    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 40px;
     padding: 15px;
-
-    .one{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 15px;
-      margin-bottom: 15px;
-
-      button{
-        height: 40px;
-        font-size: 25px;
-        color: $vdgb;
-        background-color: $lgo;
-        border: none;
-        border-radius: 5px;
-        font-weight: 700;
-        cursor: pointer;
-      }
-      .delete-btn{
-        background-color: $ddbk;
-        color: $crack;
-        font-size: 17px;
-      }
-    }
-    .bottom{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-
-      button{
-        height: 40px;
-        font-size: 17px;
-        border: none;
-        border-radius: 5px;
-        font-weight: 700;
-        color: $crack;
-        text-transform: uppercase;
-        cursor: pointer;
-      }
-      .reset-btn{
-        background-color: $ddbk;
-      }
-
-      .solve-btn{
-        background-color: $blood;
-      }
-    }
+    color: white;
+    cursor: text;
+    font-weight: 400;
+    text-align: right;
   }
+  
 }
