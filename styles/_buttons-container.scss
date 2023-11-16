@@ -1,7 +1,7 @@
 @import 'colors';
 
 .buttons-container{
-  background-color: $vddbs;
+  background-color: var(--button-container-background);
   border-radius: 10px;
   padding: 15px;
 
@@ -14,23 +14,25 @@
     button{
       height: 50px;
       font-size: 25px;
-      color: $vdgb;
-      background-color: $lgo;
+      color: var(--button-text-color);
+      background-color: var(--button-background);
       border: none;
       border-radius: 5px;
       font-weight: 700;
       cursor: pointer;
+      box-shadow: 0px 5px 0px 0px var(--box-shadow);
     }
     button:hover{
-      background-color: $crack;
+      background-color: var(--button-hover);
     }
     .delete-btn{
-      background-color: $ddbk;
-      color: $crack;
+      background-color: var(--delete-btn);
+      color: var(--bottom-text);
       font-size: 17px;
+      box-shadow: 0px 5px 0px 0px var(--delete-btn-shadow);
     }
     .delete-btn:hover{
-      background-color: $ddbkh;
+      background-color: var(--delete-btn-hover);
     }
   }
   .bottom{
@@ -44,22 +46,25 @@
       border: none;
       border-radius: 5px;
       font-weight: 700;
-      color: $crack;
+      color: var(--bottom-text);
       text-transform: uppercase;
       cursor: pointer;
     }
     .reset-btn{
-      background-color: $ddbk;
+      background-color: var(--reset-btn);
+      box-shadow: 0px 5px 0px 0px var(--delete-btn-shadow);
     }
     .reset-btn:hover{
-      background-color: $ddbkh;
+      background-color: var(--reset-btn-hover);
     }
 
     .solve-btn{
-      background-color: $blood;
+      background-color: var(--solve-btn);
+      color: var(--text);
+      box-shadow: 0px 5px 0px 0px var(--solve-btn-shadow);
     }
     .solve-btn:hover{
-      background-color: $bloodh;
+      background-color: var(--solve-btn-hover);
     }
   }
 }

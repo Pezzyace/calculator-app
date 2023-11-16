@@ -7,7 +7,7 @@
   align-items: center;
 
   .logo{
-    color: $crack;
+    color: var(--logo);
     font-size: 20px;
     text-transform: lowercase;
   }
@@ -18,7 +18,7 @@
     align-items: flex-end;
 
     p{
-        color: $crack;
+        color: var(--text);
         text-transform: uppercase;
       }
 
@@ -28,7 +28,7 @@
       gap: 3px;
       
       p{
-        color: $crack;
+        color: var(--text);
         text-transform: uppercase;
       }
 
@@ -44,7 +44,7 @@
         display: flex;
         justify-content: center;
         border-radius: 50px;
-        background-color: $vddbsb;
+        background-color: var(--switch-background);
         padding: 3px;
 
         input {
@@ -57,24 +57,24 @@
         }
         #one {
           opacity: 1;
-          background-color: $blood;
+          background-color: var(--solve-btn);
         }
         #one:hover{
-          background-color: $bloodh;
+          background-color: var(--solve-btn-hover);
         }
         #two {
           opacity: 0;
-          background-color: $blood;
+          background-color: var(--switch);
         }
         #two:hover{
-          background-color: $bloodh;
+          background-color: var(--switch-hover);
         }
         #three {
           opacity: 0;
-          background-color: $pc;
+          background-color: var(--switch-purple);
         }
         #three:hover{
-          background-color: $sc;
+          background-color: var(--switch-purple-hover);
         }
       }
     }

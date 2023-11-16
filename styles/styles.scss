@@ -4,6 +4,84 @@
 @import 'buttons-container';
 @import 'media-quires';
 
+
+:root {
+  --page-background: #{$vddb};
+  --display-background: #{$vddbsb};
+  --display-text: #{$crack};
+  --button-container-background: #{$vddbs};
+  --button-background: #{$lgo};
+  --button-text-color: #{$vdgb};
+  --button-hover: #{$crack};
+  --delete-btn: #{$ddbk};
+  --delete-btn-hover: #{$ddbkh};
+  --bottom-button-text-color: #{$crack};
+  --reset-btn: #{$ddbk};
+  --reset-btn-hover: #{$ddbkh};
+  --solve-btn: #{$blood};
+  --solve-btn-hover: #{$bloodh};
+  --logo: #{$crack};
+  --text: #{$crack};
+  --switch-background: #{$vddbsb};
+  --switch: #{$blood};
+  --switch-hover: #{$bloodh};
+  --switch-purple: #{$pc};
+  --bottom-text: #{$crack};
+  --switch-purple-hover: #{$sc};
+  --box-shadow: #{$go};
+  --delete-btn-shadow: #{$ddbks};
+  --solve-btn-shadow: #{$dblood};
+}
+
+.light {
+  --page-background: #{$lg};
+  --display-background: #{$vlg};
+  --display-text: #{$vdgy};
+  --button-container-background: #{$gr};
+  --button-background: #{$lgy};
+  --button-text-color: #{$vdgy};
+  --button-hover: #{$crack};
+  --delete-btn: #{$vdc};
+  --delete-btn-hover: #{$dmc};
+  --bottom-button-text-color: #{$crack};
+  --reset-btn: #{$vdc};
+  --reset-btn-hover: #{$dmc};
+  --solve-btn: #{$o};
+  --solve-btn-hover: #{$bloodh};
+  --logo: #{$vdgy};
+  --text: #{$vdgy};
+  --bottom-text: #{$crack};
+  --switch-background: #{$gr};
+  --box-shadow: #{$go};
+  --delete-btn-shadow: #{$vdc};
+  --solve-btn-shadow: #{$do};
+}
+
+.purple {
+  --page-background: #{$vdv};
+  --display-background: #{$vdvs};
+  --display-text: #{$ly};
+  --button-container-background: #{$vdvs};
+  --button-background: #{$vdvy};
+  --button-text-color: #{$ly};
+  --button-hover: #{$dv};
+  --delete-btn: #{$dv};
+  --delete-btn-hover: #{$vm};
+  --bottom-button-text-color: #{$crack};
+  --reset-btn: #{$dv};
+  --reset-btn-hover: #{$vm};
+  --solve-btn: #{$pc};
+  --solve-btn-hover: #{$sc};
+  --solve-btn-text: #{$vdvy};
+  --logo: #{$ly};
+  --text: #{$ly};
+  --bottom-text: #{$crack};
+  --switch-background: #{$vdvs};
+  --box-shadow: #{$dm};
+  --delete-btn-shadow: #{$vm};
+  --solve-btn-shadow: #{$sc};
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +89,7 @@
   font-family: 'League Spartan', sans-serif;
 }
 main{
-  background-color: $vddb;
+  background-color: var(--page-background);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -31,11 +31,11 @@
   outline: none;
   height: 80px;
   width: 100%;
-  background-color: hsl(224, 36%, 15%);
+  background-color: var(--display-background);
   margin-bottom: 15px;
   font-size: 40px;
   padding: 15px;
-  color: white;
+  color: var(--display-text);
   cursor: text;
   font-weight: 400;
   text-align: right;
@@ -51,7 +51,7 @@
   align-items: center;
 }
 .head .logo {
-  color: hsl(0, 0%, 100%);
+  color: var(--logo);
   font-size: 20px;
   text-transform: lowercase;
 }
@@ -61,7 +61,7 @@
   align-items: flex-end;
 }
 .head .slider-container p {
-  color: hsl(0, 0%, 100%);
+  color: var(--text);
   text-transform: uppercase;
 }
 .head .slider-container .slider {
@@ -70,7 +70,7 @@
   gap: 3px;
 }
 .head .slider-container .slider p {
-  color: hsl(0, 0%, 100%);
+  color: var(--text);
   text-transform: uppercase;
 }
 .head .slider-container .slider .top {
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: center;
   border-radius: 50px;
-  background-color: hsl(224, 36%, 15%);
+  background-color: var(--switch-background);
   padding: 3px;
 }
 .head .slider-container .slider .bottom input {
@@ -99,31 +99,31 @@
 }
 .head .slider-container .slider .bottom #one {
   opacity: 1;
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--solve-btn);
 }
 .head .slider-container .slider .bottom #one:hover {
-  background-color: hsl(6, 69%, 57%);
+  background-color: var(--solve-btn-hover);
 }
 .head .slider-container .slider .bottom #two {
   opacity: 0;
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--switch);
 }
 .head .slider-container .slider .bottom #two:hover {
-  background-color: hsl(6, 69%, 57%);
+  background-color: var(--switch-hover);
 }
 .head .slider-container .slider .bottom #three {
   opacity: 0;
-  background-color: hsl(176, 100%, 44%);
+  background-color: var(--switch-purple);
 }
 .head .slider-container .slider .bottom #three:hover {
-  background-color: hsl(177, 92%, 70%);
+  background-color: var(--switch-purple-hover);
 }
 
 /*************THEME ONE***************/
 /*************THEME TWO***************/
 /*************THEME THREE***************/
 .buttons-container {
-  background-color: hsl(223, 31%, 20%);
+  background-color: var(--button-container-background);
   border-radius: 10px;
   padding: 15px;
 }
@@ -136,23 +136,25 @@
 .buttons-container .one button {
   height: 50px;
   font-size: 25px;
-  color: hsl(221, 14%, 31%);
-  background-color: hsl(30, 25%, 89%);
+  color: var(--button-text-color);
+  background-color: var(--button-background);
   border: none;
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+  box-shadow: 0px 5px 0px 0px var(--box-shadow);
 }
 .buttons-container .one button:hover {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--button-hover);
 }
 .buttons-container .one .delete-btn {
-  background-color: hsl(225, 21%, 49%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--delete-btn);
+  color: var(--bottom-text);
   font-size: 17px;
+  box-shadow: 0px 5px 0px 0px var(--delete-btn-shadow);
 }
 .buttons-container .one .delete-btn:hover {
-  background-color: hsl(225, 38%, 65%);
+  background-color: var(--delete-btn-hover);
 }
 .buttons-container .bottom {
   display: grid;
@@ -165,21 +167,101 @@
   border: none;
   border-radius: 5px;
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
+  color: var(--bottom-text);
   text-transform: uppercase;
   cursor: pointer;
 }
 .buttons-container .bottom .reset-btn {
-  background-color: hsl(225, 21%, 49%);
+  background-color: var(--reset-btn);
+  box-shadow: 0px 5px 0px 0px var(--delete-btn-shadow);
 }
 .buttons-container .bottom .reset-btn:hover {
-  background-color: hsl(225, 38%, 65%);
+  background-color: var(--reset-btn-hover);
 }
 .buttons-container .bottom .solve-btn {
-  background-color: hsl(6, 63%, 50%);
+  background-color: var(--solve-btn);
+  color: var(--text);
+  box-shadow: 0px 5px 0px 0px var(--solve-btn-shadow);
 }
 .buttons-container .bottom .solve-btn:hover {
-  background-color: hsl(6, 69%, 57%);
+  background-color: var(--solve-btn-hover);
+}
+
+:root {
+  --page-background: hsl(222, 26%, 31%);
+  --display-background: hsl(224, 36%, 15%);
+  --display-text: hsl(0, 0%, 100%);
+  --button-container-background: hsl(223, 31%, 20%);
+  --button-background: hsl(30, 25%, 89%);
+  --button-text-color: hsl(221, 14%, 31%);
+  --button-hover: hsl(0, 0%, 100%);
+  --delete-btn: hsl(225, 21%, 49%);
+  --delete-btn-hover: hsl(225, 38%, 65%);
+  --bottom-button-text-color: hsl(0, 0%, 100%);
+  --reset-btn: hsl(225, 21%, 49%);
+  --reset-btn-hover: hsl(225, 38%, 65%);
+  --solve-btn: hsl(6, 63%, 50%);
+  --solve-btn-hover: hsl(6, 69%, 57%);
+  --logo: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+  --switch-background: hsl(224, 36%, 15%);
+  --switch: hsl(6, 63%, 50%);
+  --switch-hover: hsl(6, 69%, 57%);
+  --switch-purple: hsl(176, 100%, 44%);
+  --bottom-text: hsl(0, 0%, 100%);
+  --switch-purple-hover: hsl(177, 92%, 70%);
+  --box-shadow: hsl(28, 16%, 65%);
+  --delete-btn-shadow: hsl(224, 28%, 35%);
+  --solve-btn-shadow: hsl(6, 70%, 34%);
+}
+
+.light {
+  --page-background: hsl(0, 0%, 90%);
+  --display-background: hsl(0, 0%, 93%);
+  --display-text: hsl(60, 10%, 19%);
+  --button-container-background: hsl(0, 5%, 81%);
+  --button-background: hsl(45, 7%, 89%);
+  --button-text-color: hsl(60, 10%, 19%);
+  --button-hover: hsl(0, 0%, 100%);
+  --delete-btn: hsl(185, 58%, 25%);
+  --delete-btn-hover: hsl(185, 42%, 37%);
+  --bottom-button-text-color: hsl(0, 0%, 100%);
+  --reset-btn: hsl(185, 58%, 25%);
+  --reset-btn-hover: hsl(185, 42%, 37%);
+  --solve-btn: hsl(25, 98%, 40%);
+  --solve-btn-hover: hsl(6, 69%, 57%);
+  --logo: hsl(60, 10%, 19%);
+  --text: hsl(60, 10%, 19%);
+  --bottom-text: hsl(0, 0%, 100%);
+  --switch-background: hsl(0, 5%, 81%);
+  --box-shadow: hsl(28, 16%, 65%);
+  --delete-btn-shadow: hsl(185, 58%, 25%);
+  --solve-btn-shadow: hsl(25, 99%, 27%);
+}
+
+.purple {
+  --page-background: hsl(268, 75%, 9%);
+  --display-background: hsl(268, 71%, 12%);
+  --display-text: hsl(52, 100%, 62%);
+  --button-container-background: hsl(268, 71%, 12%);
+  --button-background: hsl(268, 47%, 21%);
+  --button-text-color: hsl(52, 100%, 62%);
+  --button-hover: hsl(281, 89%, 26%);
+  --delete-btn: hsl(281, 89%, 26%);
+  --delete-btn-hover: hsl(285, 91%, 52%);
+  --bottom-button-text-color: hsl(0, 0%, 100%);
+  --reset-btn: hsl(281, 89%, 26%);
+  --reset-btn-hover: hsl(285, 91%, 52%);
+  --solve-btn: hsl(176, 100%, 44%);
+  --solve-btn-hover: hsl(177, 92%, 70%);
+  --solve-btn-text: hsl(268, 47%, 21%);
+  --logo: hsl(52, 100%, 62%);
+  --text: hsl(52, 100%, 62%);
+  --bottom-text: hsl(0, 0%, 100%);
+  --switch-background: hsl(268, 71%, 12%);
+  --box-shadow: hsl(290, 70%, 36%);
+  --delete-btn-shadow: hsl(285, 91%, 52%);
+  --solve-btn-shadow: hsl(177, 92%, 70%);
 }
 
 * {
@@ -190,7 +272,7 @@
 }
 
 main {
-  background-color: hsl(222, 26%, 31%);
+  background-color: var(--page-background);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -2,6 +2,8 @@
 @import 'media-quires';
 
 
+
+
 .container{
   display: flex;
   flex-direction: column;
@@ -25,18 +27,14 @@
     outline: none;
     height: 80px;
     width: 100%;
-    background-color: $vddbsb;
+    background-color: var(--display-background);
     margin-bottom: 15px;
     font-size: 40px;
     padding: 15px;
-    color: white;
+    color: var(--display-text);
     cursor: text;
     font-weight: 400;
     text-align: right;
-
-    .light{
-      background-color: $crack;
-    }
   }
   
 }
