@@ -94,15 +94,22 @@ const purpleModeToggle = document.getElementById("three");
 
 lightModeToggle.addEventListener("click", () => {
   console.log("light");
-  themeStyle.setAttribute("href", "styles/lightmode.css");
+  if(themeStyle.getAttribute("href") === "styles/darkmode.css" || "styles/lightmode.css"){
+    themeStyle.setAttribute("href") === "styles/lightmode.css";
+  }
 });
 
 darkModeToggle.addEventListener("click", () => {
   console.log("light");
-  themeStyle.setAttribute("href", "styles/styles.css");
+  if(themeStyle.getAttribute("href") === "styles/perplemode.css" || "styles/lightmode.css"){
+    themeStyle.setAttribute("href") === "styles/darkmode.css";
+  }
 });
 
 purpleModeToggle.addEventListener("click", () => {
   console.log("light");
-  themeStyle.setAttribute("href", "styles/purplemode.css");
+  if(themeStyle.getAttribute("href") === "styles/darkmode.css" || "styles/lightmode.css"){
+    themeStyle.setAttribute("href") === "styles/purplemode.css";
+  }
 });
+
